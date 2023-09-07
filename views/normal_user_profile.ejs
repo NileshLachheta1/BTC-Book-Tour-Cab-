@@ -1,0 +1,98 @@
+<%- include('owner_registration_form') %>
+<%- include('driver_registration_form') %>
+<%- include('long_term_user_registration_form') %>
+
+<!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#normalUserProfile" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button> -->
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="normalUserProfile"aria-labelledby="offcanvasWithBothOptionsLabel" style="width: 40rem;">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">User Profile</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="row h-auto bg-primary">
+            <div class="d-flex">
+                <div>
+                    <!-- <i class="fa-sharp fa-solid  fa-user "></i> -->
+                    <i class='fas fa-user-circle text-light m-3 fs-1'></i>
+
+                </div>
+                <div class="my-3">
+                    <span class="text-light fw-bold mx-5 fs-6">Full Name</span> <br>
+                    <span class="text-light fw-bold mx-5 fs-6">Contact Number</span>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="d-flex">
+                <div class="mx-4 my-5">
+                    <!-- <button class="btn btn-primary fw-bold" id="become-owner-button" type="button" data-bs-toggle="modal" data-bs-target="#ownerRegistrationForm">Become a Owner</button> -->
+                    <button class="btn btn-primary fw-bold" id="become-owner-button" type="button" ><a href="owner_dashboard" class="text-white text-decoration-none">Owner Dashboard</a></button>
+                </div>
+                <div class="mx-4 my-5">
+                    <!-- <button class="btn btn-primary fw-bold" id="become-driver" type="button" data-bs-toggle="modal" data-bs-target="#driverRegistrationForm">Become a Driver</button> -->
+                    <button class="btn btn-primary fw-bold" id="become-driver" type="button" ><a href="driver_dashboard" class="text-white text-decoration-none">Driver Dashboard</a></button>
+                </div>
+                <div class="mx-4 my-5">
+                    <!-- <button class="btn btn-primary fw-bold" id="user-dashboard-button" type="button" >Dashboard</button> -->
+                    <button class="btn btn-primary fw-bold" id="user-dashboard-button" type="button" ><a href="long_term_user_dashboard" class="text-white text-decoration-none">User Dashboard</a></button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="fw-bold">Gender : </p>
+            <p class="fw-bold">DOB(Date of Birth) : </p>
+            <p class="fw-bold">View Ride History <i class="fa-solid fa-angle-down"></i></p>
+        </div>
+        <div class="container mt-1 row d-none">
+            <div class="row">
+                <div class="col-lg-8 my-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="datatable" class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th></th>
+                                            <th>Edit</th>
+                                            <th>Remove</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="table">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="d-flex">
+                <div class="mx-4 my-5">
+                    <button class="btn btn-primary fw-bold" id="complete-profile-button" type="button" data-bs-toggle="modal" data-bs-target="#longTermUserRegistrationForm">Complete Profile</button>
+                </div>
+                <div class="mx-4 my-5">
+                    <button class="btn btn-primary fw-bold" id="become_driver" type="button">Change Password</button>
+                </div>
+                <div class="mx-4 my-5">
+                    <button class="btn btn-primary fw-bold" id="become_owner" type="button">  Logout  </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/normal_user_profile.js"></script>
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+
+<script>
+    var user_dashboard_button = document.getElementById("user-dashboard-button");
+
+user_dashboard_button.addEventListener("click",()=>{
+    window.location.href="long_term_user_dashboard";
+})
+</script>

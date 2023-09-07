@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BTC-Welcome To BTC Home Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+  #locationSection {
+    background-color: #5359E2;
+    height: 6vh;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  #BelowlocationSection {
+    background-image: linear-gradient(180deg, #868bf6, #c3d6f3);
+    height: 55vh;
+    width: auto;
+  }
+
+  #input1,
+  #input2 {
+    text-align: center;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  #firstSection {
+    width: fit-content;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .Hsecond {
+    color: #007CA3;
+  }
+
+  #secondSection {
+    background-image: linear-gradient(to right, rgb(90, 98, 238), rgba(166, 200, 230, 0));
+  }
+
+  #accrodianBtn {
+    background-image: linear-gradient(180deg, #A6CAEB, #F6F0EF);
+  }
+
+  #thirdSection {
+    height: auto;
+    background-image: linear-gradient(180deg, #5359E2, #F6F0EF);
+  }
+
+  /* Circle Start */
+  .outer-ring {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #eff2f3;
+    border-radius: 50%;
+    position: relative;
+    animation: rotateClockwise 30s linear infinite;
+  }
+
+  .inner-circle {
+    width: 163px;
+    height: 168px;
+    background-color: #e1ecf3;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .extra-circle {
+    border-radius: 50%;
+    position: absolute;
+    animation: rotateCounterClockwise 10s linear infinite;
+  }
+
+  /* Position the small green circles on the outer ring */
+  .extra-circle-outer-1 {
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: -2s;
+  }
+
+  .extra-circle-outer-2 {
+    top: 50%;
+    left: 95%;
+    transform: translateX(-50%);
+    animation-delay: -4s;
+  }
+
+  .extra-circle-outer-3 {
+    bottom: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: -6s;
+  }
+
+  .extra-circle-outer-4 {
+    top: 50%;
+    left: -5px;
+    transform: translateX(-50%);
+    animation-delay: 8s;
+  }
+
+  /* Position the small green circles on the inner circle */
+  .extra-circle-inner-1 {
+    top: calc(15% - 10px);
+    left: calc(16% - 10px);
+    animation-delay: 2.5s;
+  }
+
+  .extra-circle-inner-2 {
+    top: calc(50% - 10px);
+    /* Half of the circle's height */
+    left: calc(93% - 10px);
+    /* Full width minus half of the circle's width */
+    animation-delay: 5s;
+  }
+
+  .extra-circle-inner-3 {
+    top: calc(92% - 10px);
+    left: calc(19% - -9px);
+    animation-delay: -7.5s;
+  }
+
+  /* Animation for the small green circles */
+  @keyframes rotateCounterClockwise {
+    0% {
+      transform: rotate(0deg);
+    }
+  }
+
+  /* Animation for the outer blue circle */
+  @keyframes rotateClockwise {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Circle End */
+</style>
+
+<body>
+
+  <%- include('navbar'); %>
+
+    <div class="container my-4">
+      <div class="row" id="mainContainer">
+        <div class="col col-lg-6 col-md-12 col-sm-12" id="idone">
+          <div class="row my-5" id="firstSection">
+            <div class="col col-lg-12 col-md-12 col-sm-12">
+              <h1 class="display-3 fw-bold mx-5">For Rent Car</h1>
+            </div>
+            <div class="col col-lg-12 col-md-12 col-sm-12">
+              <h1 class="Hsecond display-1 fw-bold mx-5">Best Deals</h1>
+              <form class="d-flex my-4 py-5 mx-5" role="search">
+                <button class="btn  btn-primary mx-2 " type="submit">Book For Short Term</button>
+                <button class="btn  btn-secondary" type="submit">Book For Long Term</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-6 col-md-12 col-sm-12" id="idtwo">
+          <div class="row my-4">
+            <div class="col col-lg-12">
+              <img src="images/homeimage.jpeg" height="450" alt="loded...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container" id="secondSection">
+      <div class="row">
+        <div class="col col-lg-6 col-md-12  col-sm-12 my-4 py-4">
+          <h4>What do You Known About Us</h4>
+          <h1>Who We Are</h1>
+          <p class="w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptates facere cum quos quasi, esse hic facilis in blanditiis ut!Eligendi voluptates facere cum quos quasi, esse hic facilis in blanditiis ut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dicta accusantium quae, aut sequi quo, harum ea?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit aperiam consectetur adipisicing.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit aperiam consectetur adipisicing.</p>
+          <button class="btn btn-secondary mx-4" style="background-color: #25A8F5;">Known More</button>
+        </div>
+        <div class="col col-lg-6 col-md-12  col-sm-12 my-5">
+          <div class="container d-flex justify-content-center align-items-center">
+            <div class="outer-ring">
+              <div class="inner-circle">
+                <div class="extra-circle extra-circle-inner-1"><i class="fa fa-facebook-f" style="font-size:36px; color: black;"></i></div>
+                <div class="extra-circle extra-circle-inner-2"><i class="fa fa-instagram" style="font-size:36px"></i> </div>
+                <div class="extra-circle extra-circle-inner-3"><i class="fa fa-twitter" style="font-size:36px"></i> </div>
+              </div>
+              <div class="extra-circle extra-circle-outer-1"><i class="fa fa-linkedin" style="font-size:36px"></i></div>
+              <div class="extra-circle extra-circle-outer-2"><i class="fa fa-apple" style="font-size:36px"></i></div>
+              <div class="extra-circle extra-circle-outer-3"><i class="fa fa-google" style="font-size:36px"></i></div>
+              <div class="extra-circle extra-circle-outer-4"><i class="fa fa-whatsapp" style="font-size:36px"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+
+    <div class="container" id="thirdSection">
+      <center>
+        <h5 class="my-4">See What People Ask To Us</h5>
+        <h1 class="my-4">FAQ'S</h1>
+      </center>
+      <div class="row">
+        <div class="col col-lg-6 col-md-12 col-sm-12">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item my-4">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne" id="accrodianBtn">
+                  How Can Drope The Rental Car
+                </button>
+              </h2>
+              <div id="flush-collapseOne1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                  <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item my-4">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2" aria-expanded="false" aria-controls="flush-collapseOne" id="accrodianBtn">
+                  How Can Drope The Rental Car
+                </button>
+              </h2>
+              <div id="flush-collapseOne2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                  <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionFlushExample3">
+            <div class="accordion-item my-4">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne3" aria-expanded="false" aria-controls="flush-collapseOne" id="accrodianBtn">
+                  How Can Drope The Rental Car
+                </button>
+              </h2>
+              <div id="flush-collapseOne3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample3">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                  <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-lg-6 col-md-12 col-sm-12">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item my-4">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne4" aria-expanded="false" aria-controls="flush-collapseOne" id="accrodianBtn">
+                  How Can Drope The Rental Car
+                </button>
+              </h2>
+              <div id="flush-collapseOne4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                  <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item my-4">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne5" aria-expanded="false" aria-controls="flush-collapseOne" id="accrodianBtn">
+                  How Can Drope The Rental Car
+                </button>
+              </h2>
+              <div id="flush-collapseOne5" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                  <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionFlushExample3">
+            <div class="accordion-item my-4">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne6" aria-expanded="false" aria-controls="flush-collapseOne" id="accrodianBtn">
+                  How Can Drope The Rental Car
+                </button>
+              </h2>
+              <div id="flush-collapseOne6" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample3">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                  <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+
+    <%- include('footer') %>
+
+</body>
+
+</html>

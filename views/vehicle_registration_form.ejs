@@ -1,0 +1,107 @@
+<!-- Vehicle Registration Modal Start  -->
+
+<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#vehicle_registration">
+    Vehicle Registration
+  </button><br><br>
+  
+  <!-- Modal Body -->
+  <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+  <div class="modal fade" id="vehicle_registration" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl " role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleId">Vehicle Registration Form</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+<div class="modal-body">           
+    <div class="container ">  
+        <div class="border bg-primary">
+            <h5 class="m-2 fw-bold text-center text-light">VEHICLE REGISTRATION FORM</h5>
+        </div>
+    </div>
+    <div class="container"><br>
+        <div class=" row "> 
+            <div class="mb-3 col-lg-6">
+              <label for="registration_number" class=" form-label fw-bold">Rigistration Number</label><br>
+              <input type="text" class="form-control border-dark w-75" placeholder="Enter Vehicle Registration Number" id="registration_number" aria-describedby="ride">
+            </div>
+            <div  class="mb-3 col-lg-6">
+              <label for="company_name" class=" form-label fw-bold">Company Name</label><br>
+                <input type="email" class="form-control border-dark w-75 " placeholder="Enter Vehicle Company Name" id="company_name" aria-describedby="ride"> </div>
+        </div>
+        <div class=" row "> 
+            <div  class="mb-3 col-lg-6">
+                <label for="registration_year" class=" form-label fw-bold ">Registration Year</label><br>
+                <input type="date" class="form-control border-dark w-75 " placeholder="Enter Registration Year" id="registration_year" aria-describedby="ride">
+              </div> 
+            <div  class="mb-3 col-lg-6">
+              <label for="manufacture_year" class=" form-label fw-bold ">Manufacture Year</label><br>
+              <input type="date" class="form-control border-dark w-75 " placeholder="Enter Manufacture Year" id="manufacture_year" aria-describedby="ride">
+            </div>
+        </div>
+    <div class=" row "> 
+          <div  class="mb-3 col-lg-6">
+            <label for="model_name" class=" form-label fw-bold ">Model Name</label><br>
+            <input type="text" class="form-control border-dark w-75 " placeholder="Enter Model Name" id="model_name" aria-describedby="ride">
+        </div>
+        <div class="mb-3 col-lg-6">
+            <label for="seating_capacity" class=" form-label fw-bold">Seating Capacity</label><br>
+            <input type="number" min="1" class="form-control border-dark w-75" placeholder="Enter Vehicle Seating Capacity" id="seating_capacity" aria-describedby="ride">
+       </div>   
+        
+    </div>
+
+    <div class=" row "> 
+      <div  class="mb-3 col-lg-6">
+        <select class="form-control form w-75 h-100 m-1 fw-bold" aria-label="Default select example">
+            <option class="fw-bold" selected>Select Vehicle Class</option>
+            <option class="fw-bold" value="Mini Bus">Mini Bus</option>
+            <option class="fw-bold" value="Scooty">Scooty</option>
+            <option class="fw-bold" value="Auto">Auto</option>
+            <option class="fw-bold" value="Bike">Bike</option>
+            <option class="fw-bold" value="Car">Car</option>
+          </select>
+      </div>  
+      <div class="mb-3 col-lg-6">
+        <select class="form-control form w-75 h-100 m-1 fw-bold" aria-label="Default select example">
+            <option class="fw-bold" selected>Select Fuel Type</option>
+            <option class="fw-bold" value="Petrol">Petrol</option>
+            <option class="fw-bold" value="Diesel">Diesel</option>
+            <option class="fw-bold" value="Electric">Electric</option>
+        </select> </div>      
+    </div>
+    <div class=" row">  
+      <div  class="mb-3 col-lg-6">
+        <label for="rc_book_image" class=" form-label fw-bold ">Upload RC Book Image </label><br>
+        <input type="file" class="form-control border-dark w-75 " placeholder="Upload RC Book Imamge" id="rc_book_image" aria-describedby="ride">
+      </div>  
+      <div class="mb-3 col-lg-6">
+          <label for="puc_certificate_image" class=" form-label fw-bold">Upload PUC Certificate Image</label><br>
+          <input type="file" class="form-control border-dark w-75" placeholder="Upload PUC Certificate Image" id="puc_certificate_image" aria-describedby="ride">
+     </div>   
+    </div>
+    <div class="row">
+        <div class="mb-3 col-lg-6">
+            <label for="fitness_certificate_image" class=" form-label fw-bold">Upload Fitness Certificate Image</label><br>
+            <input type="file" class="form-control border-dark w-75" placeholder="Upload Fitness Certificate Image" id="fitness_certificate_image" aria-describedby="ride">
+       </div>   
+        <div class="mb-3 col-lg-6">
+            <label for="have_insurance" class=" form-label fw-bold" >Have Insurance</label><br>
+            <input type="radio" class="border-dark mx-2" id="Yes" name="have_insurance" value="Yes" aria-describedby="ride"> <label for="Yes" class="fw-bold">Yes</label>
+            <input type="radio" class="border-dark mx-2" id="No" name="have_insurance" value="No"  aria-describedby="ride"> <label for="No" class="fw-bold">No</label>
+       </div>   
+    </div>
+</div> 
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Cancel</button>
+    <button type="button" class="btn btn-primary ">Submit</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Vehicle Registration Modal End  -->
+
